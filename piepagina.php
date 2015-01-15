@@ -43,13 +43,28 @@
 				<li>
 					<h2>Marketing</h2>
 					<ul>
-						<li><a href="#">mercado 1</a></li>
+						<li><a href="#">mercado 11</a></li>
 						<li><a href="#">mercado 2</a></li>
 						<li><a href="#">mercado 3</a></li>
 					
 					</ul>
 				</li>
+                <li><h2>Redes Sociales</h2>
+					<ul>
+						<li><a href="#" class="iconosocial"><img src="<?php echo $folder;?>imagenes/red/facebook.png"></a><a href="#" class="iconosocial"><img src="<?php echo $folder;?>imagenes/red/twitter.png"></a><a href="#" class="iconosocial"><img src="<?php echo $folder;?>imagenes/red/google+.png"></a><a href="#" class="iconosocial"><img src="<?php echo $folder;?>imagenes/red/acceder.png"></a></li>
+						
+					
+					</ul>
+                
+                	<div id="redes">
+                
+                
+                
+                
+			</div>
+                </li>
 			</ul>
+            
 		</div>
 		<!-- barra lateral -->
 		<div style="clear: both;">&nbsp;</div>
