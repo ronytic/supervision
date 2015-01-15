@@ -329,10 +329,10 @@ background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 border-radius:3px;
 	display:inline-block;
 }
-input[type=submit].enviar:hover,input[type=submit]:hover{
+/*input[type=submit].enviar:hover,input[type=submit]:hover{
 
 background-color:#8A9749
-}
+}*/
 input[readonly]{
 	background-color:#EFEFEF;
 	color:#000 !important;
@@ -637,3 +637,13 @@ small{
 	font-size:11px;
 }
 /*Fin de Texto*/
+label{
+	margin-bottom:5px;	
+}
+input[type=text],textarea,input[type=submit]{
+	padding:5px;	
+}
+input[type=submit]{
+	bottom:0px;
+	position:relative;
+}
