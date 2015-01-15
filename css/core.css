@@ -284,7 +284,7 @@ width: auto;
 	margin: 1px;
 }
 .imagenfondo{
-	background-image:url(../imagenes/main.jpg);
+	/*background-image:url(../imagenes/main.jpg);*/
 	background-repeat:no-repeat;
 	background-position:bottom left;	
 }
@@ -355,12 +355,15 @@ a,a.enlace{
 	text-decoration:none;	
 }
 a.enlaceusuario{
-	color:#FFF;
-	/*color: #3b5998;*/
-	padding:5px;
-	/*background-color:#CCC;*/
+	color:#3b5998;
+
+	padding:3px 3px 3px 0px;
 	border-radius:5px;
 	font-weight:bold;
+	display:inline-block;
+}
+a.enlaceusuario:hover{
+	color:#3b5998 !important;
 }
 a:hover,.enlace:hover{
 	text-decoration:underline;	
@@ -640,10 +643,11 @@ small{
 label{
 	margin-bottom:5px;	
 }
-input[type=text],textarea,input[type=submit]{
+input[type=text],input[type=password],textarea,input[type=submit],input[type=date]{
 	padding:5px;	
 }
 input[type=submit]{
+	margin-top:23px;
 	bottom:0px;
 	position:relative;
 }
@@ -658,4 +662,7 @@ input[type=submit]{
 	text-align:center;
 	line-height: 180%;
 	font-size: 13px;
+}
+#buscar{
+	padding:10px;	
 }

@@ -57,7 +57,7 @@ a:hover {
 	width: 0 auto;
 	height:148px	;
 	margin: 0 auto;
-	background: url(imagenes/2.png) no-repeat left 20px;
+	/*background: url(imagenes/2.png) no-repeat left 20px;*/
 }
 /*iconos de acceso a redes sociales y sistema*/
 #redes {
@@ -163,10 +163,11 @@ a:hover {
 /* buscar */
 
 #buscar {
-	float: right;
-	width: 280px;
-	height: 60px;
-	padding: 20px 0px 0px 0px;
+	color:#FFF;
+	/*float: right;*/
+	width: 240px;
+	height: 100px;
+	padding: 20px;
 	background: #A8CF64;
 	border-bottom: 4px solid #FFFFFF;
 }
