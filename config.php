@@ -4,7 +4,7 @@ $siglas="";
 $directory="supervision";//ej:carp/ sin el "/"
 $url="http://localhost/";//ej:http:"localhost/"
 $lema2="";
-$lema='Productos de Calidad';
+$lema='Supervisión de Obras';
 $direccion="EDIFICIO CHUQUIAGO CALLLE MEXICO Nro 1551 P.B. OF 1 TEL: 2114043 - 70642896";
 $telefono="2482516";
 
