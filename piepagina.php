@@ -4,13 +4,13 @@
 		<div id="sidebar">
 			<ul>
 				<li>
-					<div id="buscar" >
-					<form method="get" action="#">
-						<div>
-							<input type="text" name="s" id="search-text" value="" />
-							<input type="submit" id="search-submit" value="Search" />
-						</div>
-					</form>
+					<div id="buscar" class="contenido" >
+                            <span class="pequenol">Nombre:</span> <?php echo $us['nombre'];?> <?php echo $us['paterno'];?><br>
+                            <span class="pequenol">Usuario:</span> <?php echo $us['usuario'];?><br>
+                            <span class="pequenol">Hora Acceso:</span> <?php echo $_SESSION['horasesion'];?><br>
+                            <a href="<?php echo $folder?>usuarios/cambiarp.php?id=<?php echo $_SESSION['idusuario']?>" class="enlaceusuario">Cambiar Contraseña</a>
+                            <a href="<?php echo $folder ?>login/logout.php" class="botonplomo">Salir del Sistema</a>
+
 					</div>
 					<div style="clear: both;">&nbsp;</div>
 				</li>
@@ -66,8 +66,9 @@
 					<span class="tel">cel:68122136</span>-<span class="email">oliber.02@gmail.com</span>			
 				</h5>
 				<script type="text/javascript">
-					if (LocalStorage.pagecount){LocalStorage.pagecount = Number(LocalStorage.pagecount)+1;}else{LocalStorage.pagecount = 1;}
-					document.write("has visitado mi portal" + LocalStorage.pagecount + "veces");
+					alert(LocalStorage);
+					if (window.LocalStorage.pagecount){window.LocalStorage.pagecount = Number(window.LocalStorage.pagecount)+1;}else{window.LocalStorage.pagecount = 1;}
+					document.write("has visitado mi portal" + window.LocalStorage.pagecount + "veces");
 				</script>
 				<script type="text/javascript">
 					if (sessionStorage.pagecount){sessionStorage.pagecount = Number(sessionStorage.pagecount)+1;}else{sessionStorage.pagecount = 1;}
