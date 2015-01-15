@@ -87,14 +87,17 @@ class bd{
 		}
 		if($swadicional==1){
 			$codusuario=$_SESSION['codusuario'];
+			$nivel=$_SESSION['nivel'];
 			if(empty($codusuario)){$codusuario=1;};
 			$fecha=date("Y-m-d");
 			$hora=date("H:i:s");
-			array_push($key, "id");
-			array_push($key,"fecha");
-			array_push($key,"hora");
+			array_push($key, "cod_usuario");
+			array_push($key, "nivel_usuario");
+			array_push($key,"fecha_registro");
+			array_push($key,"hora_registro");
 			array_push($key, "activo");
 			array_push($val,$codusuario);
+			array_push($val,$nivel);
 			array_push($val,"'$fecha'");
 			array_push($val,"'$hora'");
 			array_push($val,"1");
@@ -130,12 +133,12 @@ class bd{
 	}
 	function mostrar($Cod){
 		$this->campos=array("*");
-		return $this->getRecords("cod".$this->tabla."=$Cod");
+		return $this->getRecords("cod_".$this->tabla."=$Cod");
 	}
 	
 	function mostrarTodo($where='',$orden=false,$cantidad=0){
 		$this->campos=array('*');
-		$orden=$orden?$orden:"cod".$this->tabla;
+		$orden=$orden?$orden:"cod_".$this->tabla;
 		$condicion=$where?$where.' and ':'';
 		if($cantidad==0)
 
@@ -178,10 +181,10 @@ class bd{
 		return array_shift($this->getRecords($condicion."activo=1","cod".$this->tabla,0,1,0,1));
 	}
 	function actualizar($values,$Cod){
-		$this->updateRow($values,"cod".$this->tabla."=$Cod");	
+		$this->updateRow($values,"cod_".$this->tabla."=$Cod");	
 	}
 	function eliminar($Cod){
-		$this->updateRow(array("activo"=>0),"cod".$this->tabla."=$Cod");	
+		$this->updateRow(array("activo"=>0),"cod_".$this->tabla."=$Cod");	
 	}
 	/*Fin de Metodos*/
 }
