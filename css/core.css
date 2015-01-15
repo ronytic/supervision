@@ -666,3 +666,7 @@ input[type=submit]{
 #buscar{
 	padding:10px;	
 }
+.iconosocial{
+	display:inline-block;
+	width:90px;	
+}
