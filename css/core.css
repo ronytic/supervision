@@ -218,7 +218,7 @@ div.usuario{
 	text-shadow:1px 1px 3px #CCC;
 }
 /*Fin de estilo de contenido*/
-.titulo{
+/*.titulo{
 
 	font-weight:bold;
 	padding:5px;
@@ -236,7 +236,7 @@ background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 border-bottom: 2px solid #adb96e;
 width: auto;
-}
+}*/
 .cuerpo{
 	border:#CCC 1px solid;
 	box-shadow:#999 2px 2px 3px;
@@ -646,4 +646,16 @@ input[type=text],textarea,input[type=submit]{
 input[type=submit]{
 	bottom:0px;
 	position:relative;
+}
+ .posted, .titulo{
+	
+	height: 24px;
+	padding: 3px 15px;
+	background: #A8CF64;
+	color: #FFFFFF;
+	vertical-align:middle;
+	font-weight:bold;
+	text-align:center;
+	line-height: 180%;
+	font-size: 13px;
 }
