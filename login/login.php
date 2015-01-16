@@ -35,7 +35,7 @@ if(!empty($_POST)){
 		}else{
 			header("Location:./?u=".$url.'&error=1');		
 		}
-		$codUsuario=$reg['codusuarios'];
+		$codUsuario=$reg['cod_usuarios'];
 		
 		if($sw){
 			$Nivel=$reg['nivel'];
