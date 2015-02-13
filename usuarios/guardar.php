@@ -6,8 +6,9 @@ include_once("../class/".$narchivo.".php");
 ${$narchivo}=new $narchivo;
 extract($_POST);
 if($_FILES['foto']['name']!=""){
-	@copy($_FILES['foto']['tmp_name'],"../../imagenes/usuarios/".$_FILES['foto']['name']);	
+	@copy($_FILES['foto']['tmp_name'],"../imagenes/usuarios/".$_FILES['foto']['name']);	
 }
+$
 $valores=array("usuario"=>"'$usuario'",
 			"password"=>"MD5('$password')",
 			"nombre"=>"'$nombres'",
@@ -20,6 +21,7 @@ $valores=array("usuario"=>"'$usuario'",
 			"email"=>"'$email'",
 			"celular"=>"'$celular'",
 			"cargo"=>"'$cargo'",
+			"jefatura"=>"'$jefatura'",
 			"foto"=>"'".$_FILES['foto']['name']."'",
 			"obs"=>"'$observacion'"
 			);

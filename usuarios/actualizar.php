@@ -17,12 +17,12 @@ $valores=array("usuario"=>"'$usuario'",
 			"celular"=>"'$celular'",
 			"cargo"=>"'$cargo'",
 			"email"=>"'$email'",
-			
+			"jefatura"=>"'$jefatura'",
 			"obs"=>"'$observacion'"
 			);
 			
-if($_FILES['imagen']['name']!=""){
-	@copy($_FILES['foto']['tmp_name'],"../../imagenes/productos/".$_FILES['foto']['name']);	
+if($_FILES['foto']['name']!=""){
+	@copy($_FILES['foto']['tmp_name'],"../imagenes/usuarios/".$_FILES['foto']['name']);	
 	$valores["foto"]="'".$_FILES['foto']['name']."'";
 }			
 if($password!=""){$valores=array_merge($valores,array("password"=>"MD5('$password')"));}

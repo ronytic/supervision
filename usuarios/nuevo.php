@@ -7,7 +7,6 @@ include_once $folder.'cabecerahtml.php';
 ?>
 <?php include_once $folder.'cabecera.php';?>
 <div class="prefix_2 grid_4 suffix_3 imagenfondo">
-	<div class="">
     <fieldset class="contenido">
         <div class="titulo"><?php echo $titulo;?></div>
         <form action="guardar.php" method="post" enctype="multipart/form-data">
@@ -39,7 +38,9 @@ include_once $folder.'cabecerahtml.php';
                 <td><?php campos("Email","email","text","",0,array("size"=>30));?></td>
                 <td><?php campos("Nivel","nivel","select",array("2"=>"Director","3"=>"Jefe de Unidad","4"=>"Supervisor","5"=>"Gestión","6"=>"Ventanilla","7"=>"Correspondencia"));?></td>
             </tr>
-            
+            <tr>
+                    	<td><?php campos("Jefatura","jefatura","select",array("Norte"=>"Norte","Sur"=>"Sur","Upre"=>"Upre","Cierre"=>"Cierre"),"","",$usu['jefatura']);?></td>
+                    </tr>
             <tr>
                 <td colspan="2"><?php campos("Observación","observacion","textarea","","",array("rows"=>5,"cols"=>50,"size"=>30));?></td>
             </tr>
@@ -47,7 +48,6 @@ include_once $folder.'cabecerahtml.php';
         </table>
         </form>
     </fieldset>
-    </div>
 </div>
 
 <?php include_once $folder.'piepagina.php';?>

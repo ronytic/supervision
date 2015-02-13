@@ -27,8 +27,11 @@ mostrarI(array("Usuario"=>$dato['usuario'],
 				"Teléfono"=>$dato['telefono'],
 				"Email"=>$dato['email'],
 				"Nivel de Usuario:"=>$nivel,
+				"Jefatura:"=>$dato['jefatura'],
 				"Observaciones"=>$dato['obs'],
 			));
-
+			if($dato['foto']!=""){
+$pdf->Image("../imagenes/usuarios/".$dato['foto'],150,45,30,30);
+			}
 $pdf->Output();
 ?>
