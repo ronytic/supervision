@@ -7,7 +7,7 @@ include_once "../cabecerahtml.php";
 ?>
 <?php include_once "../cabecera.php";?>
     	<div class="grid_8 prefix_1 alpha">
-        	<fieldset>
+        	<fieldset class="contenido">
         	<div class="titulo"><?php echo $titulo;?> - Criterio de Búsqueda</div>
             <form id="busqueda" action="busqueda.php" method="post" >
                 <table class="tablabus">
