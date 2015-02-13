@@ -37,7 +37,7 @@ include_once $folder.'cabecerahtml.php';
             </tr>
             <tr>
                 <td><?php campos("Email","email","text","",0,array("size"=>30));?></td>
-                <td><?php campos("Nivel","nivel","select",array("2"=>"Director","3"=>"Jefe de Unidad","4"=>"Supervisor","5"=>"Gestión","6"=>"Ventanilla"));?></td>
+                <td><?php campos("Nivel","nivel","select",array("2"=>"Director","3"=>"Jefe de Unidad","4"=>"Supervisor","5"=>"Gestión","6"=>"Ventanilla","7"=>"Correspondencia"));?></td>
             </tr>
             
             <tr>
