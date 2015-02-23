@@ -8,7 +8,6 @@ extract($_POST);
 if($_FILES['foto']['name']!=""){
 	@copy($_FILES['foto']['tmp_name'],"../imagenes/usuarios/".$_FILES['foto']['name']);	
 }
-$
 $valores=array("usuario"=>"'$usuario'",
 			"password"=>"MD5('$password')",
 			"nombre"=>"'$nombres'",
